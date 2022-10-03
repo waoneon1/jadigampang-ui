@@ -41,13 +41,13 @@
 	      <!-- Logo  -->
 	      <div class="flex-none flex flex-col justify-start pr-4 pb-4">
 	        <a href="<?php echo $root ?>" class="custom-logo-link" rel="home" aria-current="page">
-	          <img width="162" height="44" src="http://localhost:8888/project/leo/site/wp-content/uploads/2022/06/logo.png" class="custom-logo" alt="">
+	          <img width="162" height="44" src="<?php echo $root ?>/assets/image/logo.png" class="custom-logo" alt="">
 	        </a>
 	      </div>
 	      <!-- Search -->
 	      <div class="grow hidden md:flex items-center pl-5">
 	        <div class="block w-full">
-	          <form role="search" method="get" class="jg-input-form mb-0 relative text-jgtext" action="http://localhost:8888/project/leo/site/">
+	          <form role="search" method="get" class="jg-input-form mb-0 relative text-jgtext" action="">
 	            <div class="block md:flex items-center">
 	              <div class="w-full md:w-2/12">
 	                <input id="jg-product-cat" type="hidden" name="product_cat" value="">
