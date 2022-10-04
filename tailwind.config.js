@@ -48,6 +48,9 @@ module.exports = {
       },
       height: {
         'thumb': '100px'
+      },
+      margin: {
+        'overlay': '15px'
       }
     },
     boxShadow: {

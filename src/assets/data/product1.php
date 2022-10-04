@@ -13,7 +13,7 @@ $product1 = [
 		'img'				=> 'item1.png'
 	],[
 		'id' 				=> 2, 
-		'title' 		=> 'Thinwall Putih Besar 475ml', 
+		'title' 		=> 'Thinwall Putih Besar Putih Besar 475ml', 
 		'price' 		=> 200,
 		'rating' 		=> 4.9,
 		'count' 		=> '500+',
