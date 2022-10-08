@@ -67,6 +67,7 @@
 	                <input type="hidden" name="post_type" value="product">
 	              </div>
 	            </div>
+	            
 	            <!-- Category Megamenu -->
 	            <div class="js-category-megamenu hidden absolute w-full bg-white rounded mt-1 px-3 py-5">
 	              <h4 class="text-sm font-bold px-2 mb-4">Kategori</h4>
@@ -76,6 +77,7 @@
 	                <a href="#" class="js-items-category text-jgtext hover:bg-blue-100 py-1 px-2" data-slug="tshirts" data-name="Tshirts">Tshirts</a>
 	              </div>
 	            </div>
+	            
 	            <!-- Search Megamenu -->
 	            <div class="js-search-megamenu hidden absolute w-full bg-white rounded mt-1 px-3 py-5">
 	              <h4 class="text-sm font-bold px-2 mb-4">SEARCH</h4>
@@ -86,6 +88,7 @@
 	                <a href="#" class="js-items-search text-jgtext hover:bg-blue-100 py-1 px-2" data-slug="thin-wall4" data-name="Thin Wall 4">Thin Wall 4</a>
 	              </div>
 	            </div>
+
 	            <div class="mt-2 pl-2 text-white text-xs">
 	              <span class="mr-4">Accessories</span>
 	              <span class="mr-4">Hoodies</span>
@@ -95,25 +98,70 @@
 	        </div>
 	      </div>
 	      <!-- Chart, Right button -->
-	      <div class="flex-none pl-8 w-full hidden md:block" style="max-width: 400px;">
-	        <div class="flex w-full justify-between">
-	          <div class="flex grow justify-between items-center pr-6 ">
+	      <div class="flex-none pl-8 w-full hidden md:block" style="max-width: 500px;">
+	        <div class="flex w-full justify-between relative">
+	          <div class="flex grow justify-between items-center pr-6">
             	<a class="flex flex-col relative items-center text-white" href="">
 	              <img class="svg" src="<?php echo $root ?>/assets/image/icon/home.svg">
 	              <span class="text-xs mt-1">Home</span>
 	            </a>
-              <a href="<?php echo $root ?>/page/cart.php" class="cart flex flex-col relative items-center text-white" title="View your shopping cart">
+	            <a href="<?php echo $root ?>/page/cart.php" class="flex flex-col relative items-center text-white" title="View your shopping cart">
+                <img class="svg" src="<?php echo $root ?>/assets/image/icon/bell.svg">
+                <span class="text-xs mt-1">Notifikasi</span>
+              </a>
+              <span class="js-cart-megamenu-trigger relative flex flex-col relative items-center text-white cursor-pointer" title="View your shopping cart">
                 <img class="svg" src="<?php echo $root ?>/assets/image/icon/cart.svg">
                 <span class="text-xs mt-1">Keranjang</span>
-              </a>
+              </span>
             	<a class="flex flex-col relative items-center text-white" href="">
               	<img class="svg" src="<?php echo $root ?>/assets/image/icon/more-app.svg">
               	<span class="text-xs mt-1">Lainnya</span>
 							</a>
+						  <!-- Cart Megamenu -->
+	            <ul class="js-cart-megamenu absolute hidden bg-white rounded mt-1 p-5 z-30 text-sm text-gray90" style="top:40px;left:-30px;">
+	              <li class="flex justify-between pb-3 border-b">
+	              	<h4 class="font-bold mr-32">Keranjang (10)</h4>
+	              	<a class="text-primary" href="<?php echo $root ?>/page/cart.php">Lihat Keranjang</a>
+	            	</li>
+	            	<li class="flex py-3 border-b">
+	            		<img class="w-10 h-10 mr-4 rounded-md" src="<?php echo $root ?>/assets/image/static/product/item1.png">
+	            		<div class="">
+	            			<h4 class="font-bold mb-1">Plastic cup thinwall 250ml</h4>
+	            			<p><span class="text-gray70">250ml</span> • Rp200</p>
+	            		</div>
+	            	</li>
+	            	<li class="flex py-3 border-b">
+	            		<img class="w-10 h-10 mr-4 rounded-md" src="<?php echo $root ?>/assets/image/static/product/item2.png">
+	            		<div class="">
+	            			<h4 class="font-bold mb-1">Paper cup 200ml</h4>
+	            			<p><span class="text-gray70">250ml</span> • Rp200</p>
+	            		</div>
+	            	</li>
+	            	<li class="flex py-3 border-b">
+	            		<img class="w-10 h-10 mr-4 rounded-md" src="<?php echo $root ?>/assets/image/static/product/item3.png">
+	            		<div class="">
+	            			<h4 class="font-bold mb-1">Paper cup 200ml</h4>
+	            			<p><span class="text-gray70">250ml</span> • Rp200</p>
+	            		</div>
+	            	</li>
+	            	<li class="flex pt-3">
+	            		<img class="w-10 h-10 mr-4 rounded-md" src="<?php echo $root ?>/assets/image/static/product/item4.png">
+	            		<div class="">
+	            			<h4 class="font-bold mb-1">Plastic cup thinwall 250ml</h4>
+	            			<p><span class="text-gray70">250ml</span> • Rp200</p>
+	            		</div>
+	            	</li>
+	            </ul>
 	          </div>
-	          <div class="flex flex-none items-center justify-end">
-	            <a href="<?php echo $root ?>" class="text-sm rounded-lg border border-white px-4 py-2 bg-tranparant text-white mr-2"> Masuk </a>
-	            <a href="#" class="text-sm rounded border-1 border-white px-4 py-2 bg-white text-primary"> Daftar </a>
+	          <div class="flex flex-none items-center justify-end text-xs text-white">
+	           	<div class="flex items-center mr-5">
+	           		<img class="mr-1 w-6 h-6" src="<?php echo $root ?>/assets/image/static/store.png">
+	           		<span>Nama Toko</span>
+	           	</div>
+	            <div class="flex items-center">
+	           		<img class="mr-1 w-6 h-6" src="<?php echo $root ?>/assets/image/static/photo.png">
+	           		<span>Nama Akun</span>
+	           	</div>
 	          </div>
 	        </div>
 	        <div class="text-white text-sm w-full justify-end items-center flex pt-3">
