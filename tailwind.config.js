@@ -31,13 +31,13 @@ module.exports = {
           },
         },
       },
-      fontSize: {
+      fontSize: { // 28
         '2.5xl': ['1.75rem', {
           lineHeight: '2.25rem',
           letterSpacing: '-0.02em',
           fontWeight: '700',
         }],
-        '3.5xl': ['2rem', {
+        '3.5xl': ['2rem', { // 32
           lineHeight: '2.25rem',
           letterSpacing: '-0.02em',
           fontWeight: '700',

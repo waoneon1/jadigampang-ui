@@ -53,7 +53,7 @@
 	          <form role="search" method="get" class="jg-input-form mb-0 relative text-jgtext" action="">
 	            <div class="block md:flex items-center">
 	             
-	              <div class="button-dropdown w-full md:w-2/12">
+	              <div class="button-dropdown header-dropdown w-full md:w-2/12">
 	                <input id="jg-product-cat" type="hidden" name="product_cat" value="">
 	                <div class="dropdown-toggle px-4 py-2 w-full bg-white shadow-none rounded-l-lg flex cursor-pointer justify-between border">
 	                  <span class="js-category-name text-jgtext text-xs mr-1">Kategori</span>
@@ -70,7 +70,7 @@
 			            </div>
 	              </div>
 
-	              <div class="button-dropdown w-full md:w-10/12 flex">
+	              <div class="button-dropdown header-dropdown w-full md:w-10/12 flex">
 	                <input type="search" class="dropdown-toggle px-4 py-2 leading-normal w-full bg-white shadow-none text-xs" placeholder="I'm looking for" value="" name="s" autocomplete="off">
 	                <a href="<?php echo $root ?>/page/search.php" type="submit" value="Search" class="rounded-r-lg py-1 px-4 flex items-center bg-primary border-2 border-white">
 	                  <img class="svg fill-current text-white" src="<?php echo $root ?>/assets/image/icon/search.svg">
@@ -108,9 +108,9 @@
                 <img class="svg" src="<?php echo $root ?>/assets/image/icon/bell.svg">
                 <span class="text-xs mt-1">Notifikasi</span>
               </a>
-              <span class="button-dropdown text-white cursor-pointer">
+              <span class="button-dropdown header-dropdown text-white cursor-pointer">
                 <div class="dropdown-toggle flex flex-col items-center">
-                	<img class="svg" src="<?php echo $root ?>/assets/image/icon/cart.svg">
+                	<img class="svg fill-current" src="<?php echo $root ?>/assets/image/icon/cart.svg">
                 	<span class="text-xs mt-1">Keranjang</span>
                 </div>
                 <!-- Cart Dropdown -->
@@ -149,7 +149,7 @@
 		            	</li>
 		            </ul>
               </span>
-            	<span class="button-dropdown text-white cursor-pointer">
+            	<span class="button-dropdown header-dropdown text-white cursor-pointer">
             		<div class="dropdown-toggle flex flex-col items-center">
 	              	<img class="svg" src="<?php echo $root ?>/assets/image/icon/more-app.svg">
 	              	<span class="text-xs mt-1">Lainnya</span>
@@ -185,7 +185,7 @@
 							</span>
 	          </div>
 	          <div class="flex flex-none items-center justify-end text-xs text-white relative">
-	           	<div class="button-dropdown mr-5">
+	           	<div class="button-dropdown header-dropdown mr-5">
 	           		<button class="dropdown-toggle flex items-center">
 	           			<img class="mr-1 w-6 h-6" src="<?php echo $root ?>/assets/image/static/store.png">
 	           			<span>Nama Toko</span>
@@ -219,7 +219,7 @@
 		            	</li>
 		            </ul>
 	           	</div>
-	            <div class="button-dropdown">
+	            <div class="button-dropdown header-dropdown">
 	           		<button class="dropdown-toggle flex items-center">
 	           			<img class="mr-1 w-6 h-6" src="<?php echo $root ?>/assets/image/static/photo.png">
 	           			<span>Nama Akun</span>
@@ -265,41 +265,6 @@
 	</header>
  	<!-- =============================================================================== -->
 
-	<script type="text/javascript">
-		jQuery(document).ready(function (e) {
-		    function t(t) {
-		        e(t).bind("click", function (t) {
-		            t.preventDefault();
-		            e(this).parent().fadeOut()
-		        })
-		    }
-		    e(".dropdown-toggle").click(function () {
-		        var t = e(this).parents(".button-dropdown").children(".dropdown-menu").is(":hidden");
-		        e(".button-dropdown .dropdown-menu").hide();
-		        e(".button-dropdown .dropdown-toggle").removeClass("active");
-		         jQuery('.js-category-backdrop').addClass('hidden');
-		         jQuery('body').removeClass(['overflow-hidden','mr-overlay'])
-
-		        if (t) {
-		            e(this).parents(".button-dropdown").children(".dropdown-menu").toggle().parents(".button-dropdown").children(".dropdown-toggle").addClass("active")
-		            jQuery('.js-category-backdrop').removeClass('hidden');
-		            jQuery('body').addClass(['overflow-hidden','mr-overlay']);
-		        }
-		    });
-		    e(document).bind("click", function (t) {
-		        var n = e(t.target);
-		        if (!n.parents().hasClass("button-dropdown")) e(".button-dropdown .dropdown-menu").hide();
-		    });
-		    e(document).bind("click", function (t) {
-		        var n = e(t.target);
-		        if (!n.parents().hasClass("button-dropdown")) {
-		        	e(".button-dropdown .dropdown-toggle").removeClass("active");
-		          jQuery('.js-category-backdrop').addClass('hidden');
-		          jQuery('body').removeClass(['overflow-hidden','mr-overlay']);
-		        }
-		    })
-		});
-	</script>
 	<div id="content" class="site-content relative" tabindex="-1">
 		<div  class="js-category-backdrop hidden bg-black w-full h-screen absolute z-40 opacity-50" data-origin=""></div>
 		<div class="pt-10">

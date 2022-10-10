@@ -1,10 +1,10 @@
 <html>
 <head>
- 	<link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/css/intlTelInput.css" rel="stylesheet" media="screen">
+ 	<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/css/intlTelInput.css" rel="stylesheet" media="screen"> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/intlTelInput.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/intlTelInput.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/utils.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/intlTelInput.min.js"></script> -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/utils.js"></script> -->
 
 	<style type="text/css">
 		
@@ -1728,7 +1728,6 @@ button:hover {
 #result {
   margin-bottom: 100px;
 }
-
 	</style>
 </head>
 <body>
@@ -1738,8 +1737,9 @@ button:hover {
 			exit;
 		}
 	?>
-	<form action="./cc.php" method="post">
+	<form action="./cc.php" method="post" id="countryCode">
 		<input id="phone" type="tel" name="phone">
+    <input id="country" type="hidden" name="country">
 		<input type="submit" value="button">
 	</form>
 	<span id="valid-msg" class="hide">Valid</span>
@@ -1747,13 +1747,11 @@ button:hover {
 
 	<script type="text/javascript">
 		
-var telInput = $("#phone"),
-  errorMsg = $("#error-msg"),
-  validMsg = $("#valid-msg");
+
+var telInput = $("#phone");
 
 // initialise plugin
 telInput.intlTelInput({
-
   allowExtensions: true,
   formatOnDisplay: true,
   autoFormat: true,
@@ -1770,36 +1768,19 @@ telInput.intlTelInput({
   separateDialCode: true,
   initialCountry: "auto",
   geoIpLookup: function(callback) {
-  $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
-    var countryCode = (resp && resp.country) ? resp.country : "";
-    callback(countryCode);
-  });
-},
-   utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/utils.js"
-});
-
-var reset = function() {
-  telInput.removeClass("error");
-  errorMsg.addClass("hide");
-  validMsg.addClass("hide");
-};
-
-// on blur: validate
-telInput.blur(function() {
-  reset();
-  if ($.trim(telInput.val())) {
-    if (telInput.intlTelInput("isValidNumber")) {
-      validMsg.removeClass("hide");
-    } else {
-      telInput.addClass("error");
-      errorMsg.removeClass("hide");
-    }
+    $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+      var countryCode = (resp && resp.country) ? resp.country : "";
+      callback(countryCode);
+    });
   }
 });
 
-// on keyup / change flag: reset
-telInput.on("keyup change", reset);
 
+  telInput.on("countrychange", function() {
+    let code = $(this).intlTelInput("getSelectedCountryData").dialCode;
+    let phone =  $('#phone').val();
+    $('#country').val(code + phone)
+  });
 
 
 	</script>

@@ -56,9 +56,24 @@
 					</ul>
 					<ul class="mr-10">
 						<li class="mb-8 font-bold text-sm">Follow Sosial Media Kami</li>
-						<li class="mb-3"><a class="hover:text-tertiary" href="">jadigampang</a></li>
-						<li class="mb-3"><a class="hover:text-tertiary" href="">jadigampang_official</a></li>
-						<li class="mb-3"><a class="hover:text-tertiary" href="">jadigampang</a></li>
+						<li class="mb-4">
+							<a class="hover:text-tertiary flex items-center" href="">
+								<img class="svg mr-2 fill-current" src="<?php echo $root ?>/assets/image/icon/sos-ig.svg">	
+								<span>jadigampang</span>
+							</a>
+						</li>
+						<li class="mb-4">
+							<a class="hover:text-tertiary flex items-center" href="">
+								<img class="svg mr-2 fill-current" src="<?php echo $root ?>/assets/image/icon/sos-fb.svg">	
+								<span>jadigampang_official</span>
+							</a>
+						</li>
+						<li class="mb-4">
+							<a class="hover:text-tertiary flex items-center" href="">
+								<img class="svg mr-2 fill-current" src="<?php echo $root ?>/assets/image/icon/sos-tw.svg">	
+								<span>jadigampang</span>
+							</a>
+						</li>
 					</ul>
 				</div>
 			</div>

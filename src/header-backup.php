@@ -102,7 +102,7 @@
 	        <div class="flex w-full justify-between relative">
 	          <div class="flex grow justify-between items-center pr-6">
             	<a class="flex flex-col relative items-center text-white" href="">
-	              <img class="svg" src="<?php echo $root ?>/assets/image/icon/home.svg">
+	              <img class="svg fill-current" src="<?php echo $root ?>/assets/image/icon/home.svg">
 	              <span class="text-xs mt-1">Home</span>
 	            </a>
 	            <a href="<?php echo $root ?>/page/cart.php" class="flex flex-col relative items-center text-white" title="View your shopping cart">
@@ -110,7 +110,7 @@
                 <span class="text-xs mt-1">Notifikasi</span>
               </a>
               <span class="js-cart-megamenu-trigger relative flex flex-col relative items-center text-white cursor-pointer" title="View your shopping cart">
-                <img class="svg" src="<?php echo $root ?>/assets/image/icon/cart.svg">
+                <img class="svg fill-current" src="<?php echo $root ?>/assets/image/icon/cart.svg">
                 <span class="text-xs mt-1">Keranjang</span>
               </span>
             	<a class="flex flex-col relative items-center text-white" href="">

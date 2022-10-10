@@ -75,7 +75,7 @@
 			</div>
 		</div>
 		<div class="border-b p-5 flex">
-		 <div class="w-full flex px-1 py-1 leading-normal w-full bg-gray20 rounded-lg shadow-none text-xs">
+		 	<div class="w-full flex px-1 py-1 leading-normal w-full bg-gray20 rounded-lg shadow-none text-xs">
         <input type="search" class="flex-initial bg-gray20 w-full py-1" placeholder="Cari produk di toko ini">
         <a href="" class="text-primary bg-blue-100 rounded-md flex items-center justify-center px-4">
         	<span class="mr-1">Cari</span>
