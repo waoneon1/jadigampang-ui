@@ -39,13 +39,13 @@
 
 					<!-- Rate -->
 					<div class="flex justify-between w-full md:w-4/6 mb-7">
-						<div class="jg-rating inline-block mb-2 text-gray30 text-sm">
-							<span class="mr-1 text-gray90">4.0</span>
-							<span class="text-yellow-300">★ </span>
-							<span class="text-yellow-300">★ </span>
-							<span class="text-yellow-300">★ </span>
-							<span class="text-yellow-300">★ </span>
-							<span class="text-gr-300">★ </span>
+						<div class="jg-rating inline-block mb-2 text-sm flex items-center">
+							<span class="mr-2 text-gray90">4.0</span>
+							<img class="svg fill-current text-warning mr-1" src="<?php echo $root ?>/assets/image/icon/star.svg">
+							<img class="svg fill-current text-warning mr-1" src="<?php echo $root ?>/assets/image/icon/star.svg">
+							<img class="svg fill-current text-warning mr-1" src="<?php echo $root ?>/assets/image/icon/star.svg">
+							<img class="svg fill-current text-warning mr-1" src="<?php echo $root ?>/assets/image/icon/star.svg">
+							<img class="svg fill-current text-gray50 mr-1" src="<?php echo $root ?>/assets/image/icon/star.svg">
 						</div>
 						<div class="text-sm text-gray90"><span class="text-gray70">150</span> Penilaian</div>
 						<div class="text-sm text-gray90"><span class="text-gray70">700</span> Terjual</div>
@@ -137,18 +137,18 @@
 						</div>
 					</div>
 
-					<form class="flex" action="" method="post" enctype="multipart/form-data">
+					<div class="flex">
 						<button class="px-5 py-2.5 text-primary bg-blue-100 text-sm rounded-md mr-3 font-normal">
 							Bandingkan
 						</button>
 						<button class="px-5 py-2.5 text-primary bg-blue-100 text-sm rounded-md mr-3 font-normal">
 							Beli Sekarang
 						</button>
-						<button class="flex px-5 py-2.5 text-white bg-primary text-sm rounded-md font-normal items-center" type="submit" name="add-to-cart" value="87">
-							<span class="mr-1">Tambah ke Keranjang</span>
+						<button data-id="modal-prod-success" class="jg-modal-btn flex px-5 py-2.5 text-white bg-primary text-sm rounded-md font-normal items-center">
+							<span data-id="modal-prod-success" class="jg-modal-btn mr-1">Tambah ke Keranjang</span>
 							<img class="svg fill-current" src="../assets/image/icon/shopping-cart-add.svg">
 						</button>
-					</form>
+					</div>
 				</div>
 			</div>
 			<!-- Toko -->

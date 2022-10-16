@@ -1,7 +1,7 @@
 <?php $root = '../..' ?>
 <?php include $root . '/header.php'; ?>
 <?php $active_tab = 'alamat' ?> <!-- alamat, pembayaran, notif, security -->
-<?php $active_sidebar = '' ?> <!-- home, akun, pesan, notif, percakapan -->
+<?php $active_sidebar = '' ?> <!-- home, akun, pesan, notif, chat -->
 <?php $active_sidebar_nav = '' ?> <!-- langganan, disukai | semua, bayar, dikemas, dikirim, selesai, gagal | transaksi, promo, sistem -->
 
 <section class="container mx-auto">
@@ -95,7 +95,6 @@
 					</div>
 				</div>
 			</div>
-
 		</div>
 	</div>
 </section>

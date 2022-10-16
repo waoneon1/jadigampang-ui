@@ -4,10 +4,10 @@
 	<?php $penilaian = ['BK', 'IZ', 'DF'] ?>
 	<?php foreach ($penilaian as $key => $value): ?>
 		<div class="flex pb-4 mb-4 ml-4">
-			<div class="w-1/12 flex items-start">
-				<div class="flex-non bg-red-500 flex items-center justify-center w-12 h-12 mr-4 font-bold rounded-full text-white"><?php echo $value ?></div>
+			<div class="flex-none flex items-start">
+				<div class="bg-red-500 flex items-center justify-center w-12 h-12 mr-4 font-bold rounded-full text-white"><?php echo $value ?></div>
 			</div>
-			<div class="w-11/12">
+			<div class="grow">
 				<div class="w-full flex justify-between items-center mb-3">
 					<div>Nama Akun Pengguna</div>
 					<span class="font-bold text-xl">. . .</span>
@@ -21,10 +21,10 @@
 			</div>
 		</div>
 		<div class="flex pb-4 mb-4 pl-20">
-			<div class="w-1/12 flex items-start">
-				<div class="flex-non bg-red-500 flex items-center justify-center w-12 h-12 mr-4 font-bold rounded-full text-white">RP</div>
+			<div class="flex-none flex items-start">
+				<div class="bg-red-500 flex items-center justify-center w-12 h-12 mr-4 font-bold rounded-full text-white">RP</div>
 			</div>
-			<div class="w-11/12">
+			<div class="grow">
 				<div class="w-full flex justify-between items-center mb-3">
 					<div>Nama Akun Pengguna</div>
 					<span class="font-bold text-xl">. . .</span>

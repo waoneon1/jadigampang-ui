@@ -7,7 +7,7 @@
 		
 		<div class="w-full flex justify-center">
 			<div>
-				<img src="../assets/image/chart-empty.svg" class="mr-4">
+				<img src="../assets/image/cart-empty.svg" class="mr-4">
 				<div class="text-xl text-jgtext font-bold mt-6 text-center">Keranjang Belanjamu Kosong</div>
 
 				<p class="return-to-shop mt-10 text-center">

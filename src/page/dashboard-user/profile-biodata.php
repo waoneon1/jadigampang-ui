@@ -1,7 +1,7 @@
 <?php $root = '../..' ?>
 <?php include $root . '/header.php'; ?>
 <?php $active_tab = '' ?> <!-- alamat, pembayaran, notif, security -->
-<?php $active_sidebar = '' ?> <!-- home, akun, pesan, notif, percakapan -->
+<?php $active_sidebar = '' ?> <!-- home, akun, pesan, notif, chat -->
 <?php $active_sidebar_nav = '' ?> <!-- langganan, disukai | semua, bayar, dikemas, dikirim, selesai, gagal | transaksi, promo, sistem -->
 
 <section class="container mx-auto">
@@ -62,7 +62,7 @@
 							</table>
 						</div>
 						<div class="py-5 pr-5 border-b">
-							<button class="inline-block text-center py-2.5 px-5 text-white bg-primary border border-primary text-sm rounded mr-3 font-normal">Simpan</button>
+							<button class="inline-block text-center py-2.5 px-5 text-white bg-primary border border-primary text-sm rounded mr-3 font-normal" data-target="simpleModal_1" data-toggle="modal">Simpan</button>
 						</div>
 					</div>
 				</div>

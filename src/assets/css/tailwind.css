@@ -9,3 +9,45 @@ input {
 	padding: 10px;
 	outline: none;
 }
+
+a, button, input, checkbox {
+    @apply transition duration-500 ease-in-out;
+}
+
+.badge {
+	@apply ml-2 py-1 px-2 text-white text-xs rounded font-normal capitalize;
+}
+.badge-utama {
+	@apply ml-2 py-1 px-2 text-white bg-primary text-xs rounded font-normal capitalize;
+}
+
+/* FORM */
+.form-template {
+	@apply flex border text-gray90 relative;
+	border-radius: 6px;
+}
+.form {
+	@apply text-xs w-full px-3 py-3 appearance-none;
+	line-height: 14px;
+	outline: none;
+	border-radius: 6px;
+}
+.form-search {
+	@apply text-xs w-full px-2 py-2 appearance-none;
+	line-height: 14px;
+	outline: none;
+	border-radius: 6px;
+}
+.form-btn-search {
+	@apply text-primary text-xs bg-blue-100 rounded-md flex items-center justify-center px-4;
+}
+.form-sm {
+	@apply text-xs w-full px-2.5 py-1.5 appearance-none;
+	outline: none;
+	border-radius: 6px;
+}
+.form-after {
+	@apply absolute text-gray70 fill-current;
+  right: 12px;
+  top: calc( 50% - 4px );
+}

@@ -1,7 +1,7 @@
 <?php $root = '../..' ?>
 <?php include $root . '/header.php'; ?>
 <?php $active_tab = '' ?> <!-- alamat, pembayaran, notif, security -->
-<?php $active_sidebar = 'home' ?> <!-- home, akun, pesan, notif, percakapan -->
+<?php $active_sidebar = 'home' ?> <!-- home, akun, pesan, notif, chat -->
 <?php $active_sidebar_nav = '' ?> <!-- langganan, disukai | semua, bayar, dikemas, dikirim, selesai, gagal | transaksi, promo, sistem -->
 
 <?php include '../../assets/data/blog1.php'; ?>
@@ -27,13 +27,13 @@
 							<div class="flex mb-2">
 								<span class="text-gray70 text-xs mr-4">Level Pembeli</span>
 							</div>
-							<div class="jg-rating inline-block mb-2 text-gray30 text-sm">
-								<span class="mr-1 text-gray90">4.0</span>
-								<span class="text-yellow-300">★ </span>
-								<span class="text-yellow-300">★ </span>
-								<span class="text-yellow-300">★ </span>
-								<span class="text-yellow-300">★ </span>
-								<span class="text-gr-300">★ </span>
+							<div class="jg-rating inline-block mb-2 text-gray30 text-sm flex items-center">
+								<span class="mr-2 text-gray90">4.0</span>
+								<img class="svg fill-current text-warning mr-1" src="<?php echo $root ?>/assets/image/icon/star.svg">
+								<img class="svg fill-current text-warning mr-1" src="<?php echo $root ?>/assets/image/icon/star.svg">
+								<img class="svg fill-current text-warning mr-1" src="<?php echo $root ?>/assets/image/icon/star.svg">
+								<img class="svg fill-current text-warning mr-1" src="<?php echo $root ?>/assets/image/icon/star.svg">
+								<img class="svg fill-current text-gray50 mr-1" src="<?php echo $root ?>/assets/image/icon/star.svg">
 							</div>
 						</div>
 					</div>
@@ -119,7 +119,7 @@
 				</div>
 				<div class="block md:grid gap-5 grid-cols-3">
 					<?php foreach ($blog1 as $key => $blog): ?>
-						<a href="<?php echo $blog['permalink'] ?>">
+						<a href="../../page/blog.php">
 							<div class="relative mx-auto">
 								<img src="../../<?php echo $blog['thumbnail'] ?>">
 								<div class="w-full absolute bottom-0 font-bold flex justify-center items-center pt-4 text-white" style="

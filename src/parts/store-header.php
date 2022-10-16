@@ -35,13 +35,13 @@
 							<a href=""><img class="svg text-gray70 fill-current" src="../assets/image/icon/edit.svg"></a>
 						<?php endif ?>
 					</div>
-					<div class="jg-rating inline-block mb-2 text-gray30 text-sm">
-						<span class="mr-1 text-gray90">4.0</span>
-						<span class="text-yellow-300">★ </span>
-						<span class="text-yellow-300">★ </span>
-						<span class="text-yellow-300">★ </span>
-						<span class="text-yellow-300">★ </span>
-						<span class="text-gr-300">★ </span>
+					<div class="jg-rating inline-block mb-2 text-gray30 text-sm flex items-center">
+						<span class="mr-2 text-gray90">4.0</span>
+						<img class="svg fill-current text-warning mr-1" src="<?php echo $root ?>/assets/image/icon/star.svg">
+						<img class="svg fill-current text-warning mr-1" src="<?php echo $root ?>/assets/image/icon/star.svg">
+						<img class="svg fill-current text-warning mr-1" src="<?php echo $root ?>/assets/image/icon/star.svg">
+						<img class="svg fill-current text-warning mr-1" src="<?php echo $root ?>/assets/image/icon/star.svg">
+						<img class="svg fill-current text-gray50 mr-1" src="<?php echo $root ?>/assets/image/icon/star.svg">
 					</div>
 					<div class="flex">
 						<?php if ($mode == 'seller'): ?>

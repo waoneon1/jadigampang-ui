@@ -1,6 +1,7 @@
 <?php $root = '.' ?>
 <?php include $root . '/header.php'; ?>
 <?php $permalink = './page/product.php' ?>
+<?php include './assets/data/product1.php'; ?>
 
 <section id="banner" class="mb-5">
 	<div class="container md:flex mx-auto mb-16 md:mb-0">
@@ -134,7 +135,6 @@
  	</div>
 </section>
 
-<?php include './assets/data/product1.php'; ?>
 <section id="recommend" class="mb-5">
 	<div class="container mx-auto mb-16 md:mb-0">
 		<div class="px-5 md:px-0 bg-white rounded shadow-jgmain">

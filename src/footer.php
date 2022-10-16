@@ -82,6 +82,11 @@
 
 </div><!-- #page -->
 
+<!-- Modals -->
+<?php include $root . '/modal/general.php' ?>
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<!-- <script src='<?php echo $root ?>/assets/vendor/highcharts/highcharts.min.js?ver=1.1.0'></script> -->
 <script src='<?php echo $root ?>/assets/vendor/flickity/flickity.pkgd.min.js?ver=1.1.0' id='jg-flickity-js'></script>
 <script src='<?php echo $root ?>/assets/vendor/alpine/alpine.min.js?ver=1.1.0' id='jg-alpine-js'></script>
 <script src='<?php echo $root ?>/assets/js/main.js?ver=1.1.0' id='jg-main-js'></script>

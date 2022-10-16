@@ -10,7 +10,7 @@
 			<img class="flex-none pr-2" src="../assets/image/static/photo.png">
 			<p class="flex-none text-sm">Nama Akun Pengguna</p>
 			<div class="flex-initial w-full text-right">
-				<button class="px-5 py-2.5 text-primary bg-blue-100 text-sm rounded-md mr-3 font-normal">
+				<button data-id="modal-cart-akun" class="jg-modal-btn px-5 py-2.5 text-primary bg-blue-100 text-sm rounded-md mr-3 font-normal">
 					Ganti Akun
 				</button>
 			</div>

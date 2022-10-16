@@ -44,7 +44,7 @@
 						<div class="">A : We will reply you within 12 hours in working day.</div>
 					</div>
 					<?php if ($mode == 'seller'): ?>
-						<button class="px-4 py-1 text-white bg-primary text-xs rounded-md font-normal mt-5">
+						<button data-id="modal-store-info" class="jg-modal-btn px-4 py-1 text-white bg-primary text-xs rounded-md font-normal mt-5">
 							<span class="text-base mr-1 font-bold">+</span> Tambah FAQ
 						</button>
 					<?php endif ?>

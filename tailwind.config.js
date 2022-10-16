@@ -1,4 +1,6 @@
 const colors = require("tailwindcss/colors");
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
   content: ["./src/**/*.{html,js,php}"],
   darkMode: false, // or 'media' or 'class'
@@ -6,6 +8,7 @@ module.exports = {
     extend: {
       colors: {
         primary: "#0A68EB",
+        primaryFocus: "#7FB4FF",
         secondary1: "#0D3D89",
         secondary2: "#FF4E66",
         tertiary: "#FF5A34",
@@ -20,6 +23,7 @@ module.exports = {
         gray50: "#B3B3B3",
         gray30: "#D9D9D9",
         gray20: "#F5F5F5",
+        gray10: "#F9F9F9",
         jgblue: "#8BABDE"
       },
       typography: {
@@ -44,13 +48,14 @@ module.exports = {
         }],
       },
       width: {
-        'thumb': '100px'
+        'thumb': '100px',
+        'chat': '367px'
       },
       height: {
         'thumb': '100px'
       },
       margin: {
-        'overlay': '15px'
+        // 'overlay': '15px'
       }
     },
     boxShadow: {
@@ -67,7 +72,8 @@ module.exports = {
       table: '2px 5px 6px 0 rgba(35,132,221,0.16)',
       btn: '0 2px 5px 0 rgba(207,218,226)',
       thin: '0px 7px 28px -7px rgba(75, 121, 183, 0.1)',
-      jgmain: '0px 0px 12px rgba(1, 38, 97, 0.12)'
+      jgmain: '0px 0px 12px rgba(1, 38, 97, 0.12)',
+      jgseller: '0px 4px 13px rgba(1, 38, 97, 0.07)'
     },
     fontFamily: {
       primary: ['Open Sans', 'sans-serif'],
@@ -82,5 +88,75 @@ module.exports = {
   plugins: [
     require('@tailwindcss/typography'),
     require('@tailwindcss/line-clamp'),
+    plugin(function ({ addComponents, theme }) {
+      addComponents({
+        '.btn': {
+          padding: '10px 20px', 
+          borderRadius: '6px', 
+          textAlign: 'center',
+          fontSize: '14px',
+          display: 'flex',
+          position: 'relative',
+          alignItems: 'center',
+          lineHeight: '18px',
+          justifyContent: 'center'
+        },
+        '.btn-sm': {
+          padding: '5px 10px', 
+          borderRadius: '6px',
+          textAlign: 'center',
+          fontSize: '12px',
+          display: 'flex',
+          position: 'relative',
+          alignItems: 'center',
+          lineHeight: '16px',
+          justifyContent: 'center'
+        },
+        '.btn-primary': {
+          backgroundColor: '#0A68EB',
+          color: '#fff',
+          borderWidth: '1px',
+          borderColor: '#0A68EB',
+          '&:hover': {
+            backgroundColor: '#0156CB'
+          },
+          '&:focus': {
+            backgroundColor: '#7FB4FF',
+            borderWidth: '1px',
+            borderColor: '#5797F0'
+          }
+        },
+        '.btn-secondary': {
+          backgroundColor: '#E0EBFA',
+          color: '#0A68EB',
+          borderWidth: '1px',
+          borderColor: '#E0EBFA',
+          '&:hover': {
+            color: '#0156CB'
+          },
+          '&:focus': {
+            color: '#0A68EB',
+            borderWidth: '1px',
+            borderColor: '#0A68EB'
+          }
+        },
+        '.btn-inverted1': {
+          backgroundColor: '#fff',
+          color: '#0A68EB',
+          borderWidth: '1px',
+          borderColor: '#fff',
+        },
+        '.btn-inverted2': {
+          backgroundColor: '#0A68EB',
+          color: '#fff',
+          borderWidth: '1px',
+          borderColor: '#fff'
+        },
+        '.btn-disable': {
+          backgroundColor: '#D9D9D9',
+          color: '#999999',
+        }
+      })
+    })
   ],
 }

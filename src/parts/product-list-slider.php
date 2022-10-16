@@ -1,9 +1,9 @@
 <div class="products shadow-jgmain hover:shadow-lg mr-4 mb-5 rounded-md overflow-hidden" style="width:170px">
-	<a href="<?php echo $permalink ? $permalink : './product.php' ?>">
+	<a href="<?php echo $root ?>/page/product.php">
 		<div class="relative">
-			<img class="mb-3" src="./assets/image/static/product/<?php echo $item['img'] ?>">
+			<img class="mb-3" src="<?php echo $root ?>/assets/image/static/product/<?php echo $item['img'] ?>">
 			<?php if ($item['discount']): ?>
-				<span class="absolute right-2 top-0 bg-cover text-xs text-white px-1 pt-1 pb-3" style="background-image: url(./assets/image/sale.svg)">
+				<span class="absolute right-2 top-0 bg-cover text-xs text-white px-1 pt-1 pb-3" style="background-image: url(<?php echo $root ?>/assets/image/sale.svg)">
 					<?php echo $item['discount'] ?>%<br>OFF
 				</span>
 			<?php endif ?>
