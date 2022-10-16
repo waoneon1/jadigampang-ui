@@ -207,7 +207,7 @@
 		              	</div>
 		            	</li>
 		            	<li class="py-3">
-		            		<a href="<?php echo $root ?>/page/store.php?mode=seller" class="hover:text-primary">Kelola Toko Saya</a>
+		            		<a href="<?php echo $root ?>/page/dashboard-seller" class="hover:text-primary">Kelola Toko Saya</a>
 		            	</li>
 		            	<li class="pb-3">
 		            		<a class="hover:text-primary">Tambah Toko</a>
