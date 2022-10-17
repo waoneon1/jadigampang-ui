@@ -209,7 +209,8 @@
 		  xAxis: {
          title: {
 		      text: ''
-		    }
+		    },
+		    minTickInterval: 5
 		  },
 		  yAxis: {
 		    title: {
@@ -226,7 +227,7 @@
 		  plotOptions: {
 		    series: {
 		      pointStart: 0,
-
+		      pointInterval: 5
 		    },
 		    areaspline: {
 		      fillOpacity: 0.5
@@ -244,7 +245,7 @@
 		        250000,
 		        150000
 		      ],
-		    pointStart: 1,
+		    pointStart: 0,
         pointInterval: 5
 		  }, {
 		    name: 'Penjualan Per-Minggu',
@@ -258,7 +259,7 @@
 		        100000,
 		        110000
 		      ],
-		    pointStart: 1,
+		    pointStart: 0,
         pointInterval: 5
 		  }]
 		});
